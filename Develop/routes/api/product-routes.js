@@ -12,6 +12,7 @@ router.get('/', (req, res) => {
   .then((product) => {
     res.status(200).json(product)
   }) .catch((err) => {
+    console.log(err)
     res.status(500).json(err)
   })
 });
